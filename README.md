@@ -11,3 +11,7 @@ This is a css project I started to test my CSS skills. It is an illustration of 
  - HTML
  - CSS
  - SASS
+
+## setup
+ - To see the illustration, download the project and run the index.html file with your browser.
+ - The only time you would need a SASS compiler is if you feel the need to alter the code.
