@@ -1,0 +1,452 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background: royalblue;
+  display: grid;
+  place-items: center;
+}
+
+.bob{
+  height: 60vh;
+  width: 40vw;
+  // background: yellow;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 15rem;
+  box-shadow: 
+    1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+  background: radial-gradient(closest-side at 75% 45%, rgba(255, 255, 255, 0.562) 1%, rgba(255, 255, 0, 0.856),yellow 100%); 
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  position: relative;
+
+  .head{
+    height: calc(65vh - 40%);
+    width: inherit;
+    //background: yellowgreen;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    .goggles{
+      height: 40%;
+      width: inherit;
+      margin-top: 10%;
+      //background: yellowgreen;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: rotate(-3deg);
+
+      .strap{
+        width: 15%;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        transform: translateX(5%);
+
+        .metal-piece{
+          height: 100%;
+          width: 25%;
+          background: rgb(169, 207, 202);
+          box-shadow: 0.2rem -0.1rem 0.5rem 0.1rem inset rgba(45, 83, 77, 0.788);
+        }
+
+        .belt-piece{
+          height: 80%;
+          flex: 1;
+          background: rgb(37, 27, 14);
+          clip-path: polygon(40% 0, 20% 40%, 5% 100%, 100% 100%, 100% 0);
+        }
+      }
+
+      .lense{
+        flex: 1;
+        height: 100%;
+        border-radius: 50%;
+        background: rgb(169, 207, 202);
+        display: grid;
+        place-items: center;
+        box-shadow:
+          -0.1rem -0.5rem 0.5rem 0rem inset rgba(0, 0, 0, 0.7);
+
+        .eyeball{
+          height: 80%;
+          width: 80%;
+          border-radius: 50%;
+          background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 
+            -0.3rem 0.3rem 0.3rem 0 inset rgba(0, 0, 0, 0.7),
+            -1rem 1rem 0.3rem 0 inset rgba(0, 0, 0, 0.3);
+          
+          .pupil{
+            height: 30%;
+            width: 30%;
+            position: relative;
+            border-radius: 50%;
+            background: rgb(197, 82, 15);
+            display: grid;
+            place-items: center;
+            box-shadow:
+              -0.05rem -0.05rem 0.2rem 0.2rem inset rgba(0, 0, 0, 0.7);
+          
+            .eye-shine{
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              top: 0;
+              left: 0;
+              z-index: 500;
+              border-radius: 50%;
+              background: radial-gradient(closest-side at 75% 30%, white 40%, rgba(255, 255, 255, 0.3));
+            }
+
+            .iris{
+              position: absolute;
+              height: 50%;
+              width: 50%;
+              border-radius: 50%;
+              margin-bottom: 7%;
+              z-index: 50;
+              background: rgba(0, 0, 0, 0.9);
+            }
+          }
+          
+          .left-pupil{
+            margin-left: 30%;
+          }
+  
+          .right-pupil{
+            margin-right: 40%;
+          }
+        }
+      }
+
+      .right-lense{
+        transform: translateX(-5%);
+      }
+    }
+
+    .mouth{
+      height: 40%;
+      width: 50%;
+      border-radius: 50%;
+      transform: translate(67%, -60%) rotate(-3deg);
+      //clip-path: polygon(10% 36%, 10% 44%, 21% 51%, 43% 57%, 61% 54%, 73% 50%, 81% 41%, 82% 33%, 74% 31%, 62% 30%, 53% 32%, 43% 34%, 35% 33%, 24% 34%);
+      clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+      background: black;
+      position: relative;
+
+      & > *{
+        position: absolute;
+        bottom: 0;
+      }
+
+      .tooth-one, .tooth-two, .tooth-three, .tooth-four, .tooth-five{
+        height: 0.8rem;
+        width: 3rem;
+        background: white;
+        // z-index: 1000;
+      }
+
+      .tooth-one, .tooth-two, .tooth-three, .tooth-four{
+        width: 3rem;
+      }
+
+      .tooth-one{
+        bottom: 37%;
+        left: 1%;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        box-shadow:
+         0.5rem 0rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6),
+         0.2rem 0rem 0.2rem 0rem inset rgba(0, 0, 0, 0.9);
+      }
+
+      .tooth-two{
+        height: 0.7rem;
+        bottom: 38%;
+        left: 23%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        box-shadow:
+          0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+      }
+
+      .tooth-three{
+        height: 0.6rem;
+        bottom: 39%;
+        left: 46%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        box-shadow:
+          0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+      }
+
+      .tooth-four{
+        height: 0.6rem;
+        bottom: 39%;
+        left: 67%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        box-shadow:
+          0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+      }
+
+      .tooth-five{
+        height: 0.7rem;
+        width: 1.5rem;
+        bottom: 39%;
+        left: 88%;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.3rem;
+        box-shadow:
+         -0.5rem 0rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6),
+         -0.2rem 0.1rem 0.2rem 0rem inset rgba(0, 0, 0, 0.9);
+      }
+
+      .tongue{
+        height: 1.3rem;
+        width: 6rem;
+        background: rgb(153, 28, 28);
+        left: 29%;
+        bottom: 1%;
+        border-radius: 50%;
+        // border-bottom-right-radius: 1rem;
+        border-top-left-radius: 30%;
+        box-shadow:
+         0.3rem 0.1rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6),
+         -1rem -0.4rem 0.2rem 0rem rgba(83, 10, 10, 0.699),
+         0.5rem -0.4rem 0.2rem 0rem rgba(51, 11, 11, 0.671);
+      }
+    }
+  }
+
+  .arms{
+    position: absolute;
+    height: 15rem;
+    width: 3.5rem;
+    background: rgba(255, 255, 0, 1);
+  }
+
+  .left-arm{
+    transform: translate(-4rem, 9rem) rotate(-30deg);
+    clip-path: polygon(30% 0, 100% 0, 100% 60%, 0 100%, 20% 75%);
+    box-shadow:
+    -1rem -1rem 2rem 0rem inset rgba(0, 0, 0, 0.5),
+    1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+  }
+
+  .left-hand, .right-hand{
+    position: absolute;
+    height: 10rem;
+    width: 7.5rem;
+  }
+
+  .left-hand{
+    transform: rotate(-27deg) translate(-10rem, -5rem);
+  
+    & > *{
+      position: absolute;
+      background: rgb(37, 27, 14);
+      box-shadow:
+        0.5rem -0.5rem 2rem 0rem inset rgba(0, 0, 0, 0.863),
+        -0.5rem -0.5rem 1rem 0rem inset rgba(255, 255, 255, 0.247);
+    }
+
+    .tip{
+      height: 1.8rem;
+      width: 1.8rem;
+      border-radius: 40%;
+      z-index: 50;
+
+      &-one{
+        transform: translate(0.9rem, 1.7rem);
+      }
+
+      &-two{
+        transform: translate(2.9rem, 1.7rem);
+      }
+
+      &-three{
+        transform: translate(5.4rem, 3.7rem);
+      }
+    }
+
+    .finger{
+      height: 1.6rem;
+      width: 1.5rem;
+      z-index: 10;
+
+      &-one{
+        transform: translate(1.2rem, 3rem) rotate(-9deg);
+      }
+
+      &-two{
+        transform: translate(3rem, 3rem) rotate(4deg);
+      }
+
+      &-three{
+        transform: translate(4.9rem, 4.1rem) rotate(-15deg);
+      }
+    }
+
+    .palm{
+      height: 3rem;
+      width: 3rem;
+
+      &-one{
+        border-radius: 1rem;
+        transform: translate(1rem, 4.2rem);
+      }
+
+      &-two{
+        border-bottom-right-radius: 2rem;
+        border-top-left-radius: 1.5rem;
+        transform: translate(2.4rem, 4.2rem);
+      }
+    }
+
+    .wrist{
+      height: 3rem;
+      width: 4rem;
+      transform: translate(1rem, 6.9rem);
+      clip-path: polygon(20% 0%, 85% 0, 100% 100%, 0 100%);
+      box-shadow:
+        0.5rem -0.5rem 2rem 0rem inset rgba(0, 0, 0, 0.863),
+        -0.5rem -0.5rem 1rem 0rem inset rgba(255, 255, 255, 0.247);
+    }
+  }
+
+  .right-hand{
+    transform: rotate(27deg) translate(26rem, -13.4rem);
+  }
+
+  .right-arm{
+    transform: translate(26.8rem, 9rem) rotate(25deg);
+    clip-path: polygon(0% 0%, 70% 0, 100% 100%, 0 100%);
+    box-shadow:
+    -1rem 1rem 2rem 0rem inset rgba(0, 0, 0, 0.2);
+  }
+
+  .torso{
+    height: 10.9rem;
+    background: rgb(27, 94, 133);
+    border-bottom-left-radius: 8.5rem;
+    border-bottom-right-radius: 8.5rem;
+    box-shadow: 
+      1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+    transform: translateY(15%);
+    border-top: 0.2rem dashed rgb(169, 207, 202);
+
+    .main-part{
+      width: 70%;
+      height: 10rem;
+      background: rgb(27, 94, 133);
+      margin-left: 20%;
+      transform: translateY(-70%);
+      border-top: 0.12rem dashed rgb(169, 207, 202);
+      border-left: 0.12rem dashed rgb(169, 207, 202);
+      border-right: 0.13rem dashed rgb(169, 207, 202);
+      clip-path: polygon(0 0, 0 70%, 100% 70%, 100% 0);
+    }
+
+    .inner-pocket{
+      position: absolute;
+      height: 38%;
+      width: 25%;
+      background: rgb(27, 94, 133);
+      box-shadow:
+       0rem -0.5rem 0.6rem 0rem rgba(0, 0, 0, 0.7),
+       -0.1rem 0.1rem 0.6rem 0rem rgba(0, 0, 0, 0.7);
+      z-index: 500;
+      border: 0.13rem dashed rgb(169, 207, 202);
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      transform: translate(12rem, -14rem);
+    }
+
+    .left-strap, .right-strap{
+      position: absolute;
+      height: 2rem;
+      background: rgb(27, 94, 133);
+      border: 0.1rem dashed rgb(169, 207, 202);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      border-radius: 0.3rem;
+      
+      .button{
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 50%;
+        background: rgb(37, 27, 14);
+        display: grid;
+        place-items: center;
+        color: rgb(27, 94, 133);
+        font-size: 1.2rem;
+        font-weight: 900;
+      }
+    }
+
+    .left-strap{
+      width: 9.5rem;
+      justify-content: flex-end;
+      transform: translate(-1.5rem, -9rem) rotate(35deg);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+      
+      .button{
+        margin-right: 0.3rem;
+        // padding-bottom: 0.5rem;
+      }
+    }
+
+    .right-strap{
+      width: 8.5rem;
+      justify-content: flex-start;
+      transform: translate(20.8rem, -9.5rem) rotate(-50deg);
+      clip-path: polygon(0% 0%, 100% 0%, 73% 100%, 0% 100%);
+
+      .button{
+        margin-left: 0.3rem;
+      }
+    }
+
+    .pocket{
+      height: 5rem;
+      width: 5rem;
+      background: rgb(27, 94, 133);
+      border-radius: 50%;
+      border: 0.15rem dashed rgb(169, 207, 202);
+    }
+
+    .left-pocket{
+      clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 40% 100%);
+      border-bottom-left-radius: 0;
+      transform: translate(0.7rem, -12.5rem);
+      box-shadow: -0.2rem -0.2rem 0.7rem 0.1rem inset rgba(0, 0, 0, 0.6);
+    }
+
+    .right-pocket{
+      clip-path: polygon(0% 50%, 60% 50%, 60% 100%, 0 100%);
+      border-bottom-right-radius: 0;
+      transform: translate(24rem, -17.4rem);
+      box-shadow: 0.1rem -0.1rem 0.5rem 0 inset rgba(0, 0, 0, 0.6);
+    }
+  }
+}

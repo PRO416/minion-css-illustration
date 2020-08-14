@@ -1,0 +1,524 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: royalblue;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.bob {
+  height: 60vh;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  border-radius: 15rem;
+  -webkit-box-shadow: 1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+          box-shadow: 1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+  background: radial-gradient(closest-side at 75% 45%, rgba(255, 255, 255, 0.562) 1%, rgba(255, 255, 0, 0.856), yellow 100%);
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  position: relative;
+}
+
+.bob .head {
+  height: calc(65vh - 40%);
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bob .head .goggles {
+  height: 40%;
+  width: inherit;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.bob .head .goggles .strap {
+  width: 15%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+.bob .head .goggles .strap .metal-piece {
+  height: 100%;
+  width: 25%;
+  background: #a9cfca;
+  -webkit-box-shadow: 0.2rem -0.1rem 0.5rem 0.1rem inset rgba(45, 83, 77, 0.788);
+          box-shadow: 0.2rem -0.1rem 0.5rem 0.1rem inset rgba(45, 83, 77, 0.788);
+}
+
+.bob .head .goggles .strap .belt-piece {
+  height: 80%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #251b0e;
+  -webkit-clip-path: polygon(40% 0, 20% 40%, 5% 100%, 100% 100%, 100% 0);
+          clip-path: polygon(40% 0, 20% 40%, 5% 100%, 100% 100%, 100% 0);
+}
+
+.bob .head .goggles .lense {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  border-radius: 50%;
+  background: #a9cfca;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: -0.1rem -0.5rem 0.5rem 0rem inset rgba(0, 0, 0, 0.7);
+          box-shadow: -0.1rem -0.5rem 0.5rem 0rem inset rgba(0, 0, 0, 0.7);
+}
+
+.bob .head .goggles .lense .eyeball {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -0.3rem 0.3rem 0.3rem 0 inset rgba(0, 0, 0, 0.7), -1rem 1rem 0.3rem 0 inset rgba(0, 0, 0, 0.3);
+          box-shadow: -0.3rem 0.3rem 0.3rem 0 inset rgba(0, 0, 0, 0.7), -1rem 1rem 0.3rem 0 inset rgba(0, 0, 0, 0.3);
+}
+
+.bob .head .goggles .lense .eyeball .pupil {
+  height: 30%;
+  width: 30%;
+  position: relative;
+  border-radius: 50%;
+  background: #c5520f;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: -0.05rem -0.05rem 0.2rem 0.2rem inset rgba(0, 0, 0, 0.7);
+          box-shadow: -0.05rem -0.05rem 0.2rem 0.2rem inset rgba(0, 0, 0, 0.7);
+}
+
+.bob .head .goggles .lense .eyeball .pupil .eye-shine {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  border-radius: 50%;
+  background: radial-gradient(closest-side at 75% 30%, white 40%, rgba(255, 255, 255, 0.3));
+}
+
+.bob .head .goggles .lense .eyeball .pupil .iris {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 7%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.bob .head .goggles .lense .eyeball .left-pupil {
+  margin-left: 30%;
+}
+
+.bob .head .goggles .lense .eyeball .right-pupil {
+  margin-right: 40%;
+}
+
+.bob .head .goggles .right-lense {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+.bob .head .mouth {
+  height: 40%;
+  width: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(67%, -60%) rotate(-3deg);
+          transform: translate(67%, -60%) rotate(-3deg);
+  -webkit-clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+          clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+  background: black;
+  position: relative;
+}
+
+.bob .head .mouth > * {
+  position: absolute;
+  bottom: 0;
+}
+
+.bob .head .mouth .tooth-one, .bob .head .mouth .tooth-two, .bob .head .mouth .tooth-three, .bob .head .mouth .tooth-four, .bob .head .mouth .tooth-five {
+  height: 0.8rem;
+  width: 3rem;
+  background: white;
+}
+
+.bob .head .mouth .tooth-one, .bob .head .mouth .tooth-two, .bob .head .mouth .tooth-three, .bob .head .mouth .tooth-four {
+  width: 3rem;
+}
+
+.bob .head .mouth .tooth-one {
+  bottom: 37%;
+  left: 1%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  -webkit-box-shadow: 0.5rem 0rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6), 0.2rem 0rem 0.2rem 0rem inset rgba(0, 0, 0, 0.9);
+          box-shadow: 0.5rem 0rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6), 0.2rem 0rem 0.2rem 0rem inset rgba(0, 0, 0, 0.9);
+}
+
+.bob .head .mouth .tooth-two {
+  height: 0.7rem;
+  bottom: 38%;
+  left: 23%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-box-shadow: 0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+          box-shadow: 0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+}
+
+.bob .head .mouth .tooth-three {
+  height: 0.6rem;
+  bottom: 39%;
+  left: 46%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-box-shadow: 0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+          box-shadow: 0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+}
+
+.bob .head .mouth .tooth-four {
+  height: 0.6rem;
+  bottom: 39%;
+  left: 67%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-box-shadow: 0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+          box-shadow: 0rem 0.1rem 0.3rem 0rem inset rgba(0, 0, 0, 0.6);
+}
+
+.bob .head .mouth .tooth-five {
+  height: 0.7rem;
+  width: 1.5rem;
+  bottom: 39%;
+  left: 88%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.3rem;
+  -webkit-box-shadow: -0.5rem 0rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6), -0.2rem 0.1rem 0.2rem 0rem inset rgba(0, 0, 0, 0.9);
+          box-shadow: -0.5rem 0rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6), -0.2rem 0.1rem 0.2rem 0rem inset rgba(0, 0, 0, 0.9);
+}
+
+.bob .head .mouth .tongue {
+  height: 1.3rem;
+  width: 6rem;
+  background: #991c1c;
+  left: 29%;
+  bottom: 1%;
+  border-radius: 50%;
+  border-top-left-radius: 30%;
+  -webkit-box-shadow: 0.3rem 0.1rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6), -1rem -0.4rem 0.2rem 0rem rgba(83, 10, 10, 0.699), 0.5rem -0.4rem 0.2rem 0rem rgba(51, 11, 11, 0.671);
+          box-shadow: 0.3rem 0.1rem 0.3rem 0.1rem inset rgba(0, 0, 0, 0.6), -1rem -0.4rem 0.2rem 0rem rgba(83, 10, 10, 0.699), 0.5rem -0.4rem 0.2rem 0rem rgba(51, 11, 11, 0.671);
+}
+
+.bob .arms {
+  position: absolute;
+  height: 15rem;
+  width: 3.5rem;
+  background: yellow;
+}
+
+.bob .left-arm {
+  -webkit-transform: translate(-4rem, 9rem) rotate(-30deg);
+          transform: translate(-4rem, 9rem) rotate(-30deg);
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 60%, 0 100%, 20% 75%);
+          clip-path: polygon(30% 0, 100% 0, 100% 60%, 0 100%, 20% 75%);
+  -webkit-box-shadow: -1rem -1rem 2rem 0rem inset rgba(0, 0, 0, 0.5), 1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+          box-shadow: -1rem -1rem 2rem 0rem inset rgba(0, 0, 0, 0.5), 1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+}
+
+.bob .left-hand, .bob .right-hand {
+  position: absolute;
+  height: 10rem;
+  width: 7.5rem;
+}
+
+.bob .left-hand {
+  -webkit-transform: rotate(-27deg) translate(-10rem, -5rem);
+          transform: rotate(-27deg) translate(-10rem, -5rem);
+}
+
+.bob .left-hand > * {
+  position: absolute;
+  background: #251b0e;
+  -webkit-box-shadow: 0.5rem -0.5rem 2rem 0rem inset rgba(0, 0, 0, 0.863), -0.5rem -0.5rem 1rem 0rem inset rgba(255, 255, 255, 0.247);
+          box-shadow: 0.5rem -0.5rem 2rem 0rem inset rgba(0, 0, 0, 0.863), -0.5rem -0.5rem 1rem 0rem inset rgba(255, 255, 255, 0.247);
+}
+
+.bob .left-hand .tip {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 40%;
+  z-index: 50;
+}
+
+.bob .left-hand .tip-one {
+  -webkit-transform: translate(0.9rem, 1.7rem);
+          transform: translate(0.9rem, 1.7rem);
+}
+
+.bob .left-hand .tip-two {
+  -webkit-transform: translate(2.9rem, 1.7rem);
+          transform: translate(2.9rem, 1.7rem);
+}
+
+.bob .left-hand .tip-three {
+  -webkit-transform: translate(5.4rem, 3.7rem);
+          transform: translate(5.4rem, 3.7rem);
+}
+
+.bob .left-hand .finger {
+  height: 1.6rem;
+  width: 1.5rem;
+  z-index: 10;
+}
+
+.bob .left-hand .finger-one {
+  -webkit-transform: translate(1.2rem, 3rem) rotate(-9deg);
+          transform: translate(1.2rem, 3rem) rotate(-9deg);
+}
+
+.bob .left-hand .finger-two {
+  -webkit-transform: translate(3rem, 3rem) rotate(4deg);
+          transform: translate(3rem, 3rem) rotate(4deg);
+}
+
+.bob .left-hand .finger-three {
+  -webkit-transform: translate(4.9rem, 4.1rem) rotate(-15deg);
+          transform: translate(4.9rem, 4.1rem) rotate(-15deg);
+}
+
+.bob .left-hand .palm {
+  height: 3rem;
+  width: 3rem;
+}
+
+.bob .left-hand .palm-one {
+  border-radius: 1rem;
+  -webkit-transform: translate(1rem, 4.2rem);
+          transform: translate(1rem, 4.2rem);
+}
+
+.bob .left-hand .palm-two {
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 1.5rem;
+  -webkit-transform: translate(2.4rem, 4.2rem);
+          transform: translate(2.4rem, 4.2rem);
+}
+
+.bob .left-hand .wrist {
+  height: 3rem;
+  width: 4rem;
+  -webkit-transform: translate(1rem, 6.9rem);
+          transform: translate(1rem, 6.9rem);
+  -webkit-clip-path: polygon(20% 0%, 85% 0, 100% 100%, 0 100%);
+          clip-path: polygon(20% 0%, 85% 0, 100% 100%, 0 100%);
+  -webkit-box-shadow: 0.5rem -0.5rem 2rem 0rem inset rgba(0, 0, 0, 0.863), -0.5rem -0.5rem 1rem 0rem inset rgba(255, 255, 255, 0.247);
+          box-shadow: 0.5rem -0.5rem 2rem 0rem inset rgba(0, 0, 0, 0.863), -0.5rem -0.5rem 1rem 0rem inset rgba(255, 255, 255, 0.247);
+}
+
+.bob .right-hand {
+  -webkit-transform: rotate(27deg) translate(26rem, -13.4rem);
+          transform: rotate(27deg) translate(26rem, -13.4rem);
+}
+
+.bob .right-arm {
+  -webkit-transform: translate(26.8rem, 9rem) rotate(25deg);
+          transform: translate(26.8rem, 9rem) rotate(25deg);
+  -webkit-clip-path: polygon(0% 0%, 70% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0% 0%, 70% 0, 100% 100%, 0 100%);
+  -webkit-box-shadow: -1rem 1rem 2rem 0rem inset rgba(0, 0, 0, 0.2);
+          box-shadow: -1rem 1rem 2rem 0rem inset rgba(0, 0, 0, 0.2);
+}
+
+.bob .torso {
+  height: 10.9rem;
+  background: #1b5e85;
+  border-bottom-left-radius: 8.5rem;
+  border-bottom-right-radius: 8.5rem;
+  -webkit-box-shadow: 1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+          box-shadow: 1rem -2rem 2rem 1rem inset rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  border-top: 0.2rem dashed #a9cfca;
+}
+
+.bob .torso .main-part {
+  width: 70%;
+  height: 10rem;
+  background: #1b5e85;
+  margin-left: 20%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  border-top: 0.12rem dashed #a9cfca;
+  border-left: 0.12rem dashed #a9cfca;
+  border-right: 0.13rem dashed #a9cfca;
+  -webkit-clip-path: polygon(0 0, 0 70%, 100% 70%, 100% 0);
+          clip-path: polygon(0 0, 0 70%, 100% 70%, 100% 0);
+}
+
+.bob .torso .inner-pocket {
+  position: absolute;
+  height: 38%;
+  width: 25%;
+  background: #1b5e85;
+  -webkit-box-shadow: 0rem -0.5rem 0.6rem 0rem rgba(0, 0, 0, 0.7), -0.1rem 0.1rem 0.6rem 0rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0rem -0.5rem 0.6rem 0rem rgba(0, 0, 0, 0.7), -0.1rem 0.1rem 0.6rem 0rem rgba(0, 0, 0, 0.7);
+  z-index: 500;
+  border: 0.13rem dashed #a9cfca;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  -webkit-transform: translate(12rem, -14rem);
+          transform: translate(12rem, -14rem);
+}
+
+.bob .torso .left-strap, .bob .torso .right-strap {
+  position: absolute;
+  height: 2rem;
+  background: #1b5e85;
+  border: 0.1rem dashed #a9cfca;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.3rem;
+}
+
+.bob .torso .left-strap .button, .bob .torso .right-strap .button {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  background: #251b0e;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #1b5e85;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.bob .torso .left-strap {
+  width: 9.5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translate(-1.5rem, -9rem) rotate(35deg);
+          transform: translate(-1.5rem, -9rem) rotate(35deg);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+}
+
+.bob .torso .left-strap .button {
+  margin-right: 0.3rem;
+}
+
+.bob .torso .right-strap {
+  width: 8.5rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transform: translate(20.8rem, -9.5rem) rotate(-50deg);
+          transform: translate(20.8rem, -9.5rem) rotate(-50deg);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 73% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 73% 100%, 0% 100%);
+}
+
+.bob .torso .right-strap .button {
+  margin-left: 0.3rem;
+}
+
+.bob .torso .pocket {
+  height: 5rem;
+  width: 5rem;
+  background: #1b5e85;
+  border-radius: 50%;
+  border: 0.15rem dashed #a9cfca;
+}
+
+.bob .torso .left-pocket {
+  -webkit-clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 40% 100%);
+          clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 40% 100%);
+  border-bottom-left-radius: 0;
+  -webkit-transform: translate(0.7rem, -12.5rem);
+          transform: translate(0.7rem, -12.5rem);
+  -webkit-box-shadow: -0.2rem -0.2rem 0.7rem 0.1rem inset rgba(0, 0, 0, 0.6);
+          box-shadow: -0.2rem -0.2rem 0.7rem 0.1rem inset rgba(0, 0, 0, 0.6);
+}
+
+.bob .torso .right-pocket {
+  -webkit-clip-path: polygon(0% 50%, 60% 50%, 60% 100%, 0 100%);
+          clip-path: polygon(0% 50%, 60% 50%, 60% 100%, 0 100%);
+  border-bottom-right-radius: 0;
+  -webkit-transform: translate(24rem, -17.4rem);
+          transform: translate(24rem, -17.4rem);
+  -webkit-box-shadow: 0.1rem -0.1rem 0.5rem 0 inset rgba(0, 0, 0, 0.6);
+          box-shadow: 0.1rem -0.1rem 0.5rem 0 inset rgba(0, 0, 0, 0.6);
+}
+/*# sourceMappingURL=style.css.map */
